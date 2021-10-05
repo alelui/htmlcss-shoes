@@ -6,10 +6,80 @@
     box-sizing: border-box;
 }
 
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 
 /* *** HEADER *** */
 
+
+nav{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+nav ul li{ 
+    margin: 10px 20px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    list-style: none;
+    background-color: lightgray;
+    border-radius: 50%;
+    float: right;
+}
+
+li a{
+    text-decoration: none;
+}
+
 /* *** MAIN *** */
+
+
+main{
+    
+    text-align: center;
+}
+
+main .description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .misure{
+    height: 60vw;
+    position: relative;
+}
+
+#shoes-one{
+    background-color: red;
+}
+#shoes-two{
+    background-color: green;
+}
+#shoes-three{
+    background-color: burlywood;
+}
+
+main h2{
+    color: yellow;
+    width: 50%;
+    margin: auto;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+
+
+
 
 /* *** FOOTER *** */
 
