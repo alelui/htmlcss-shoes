@@ -15,13 +15,12 @@
 
 /* *** HEADER *** */
 
-
 nav{
     text-align: center;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 9999;
 }
 
 nav ul li{ 
@@ -32,19 +31,29 @@ nav ul li{
     list-style: none;
     background-color: lightgray;
     border-radius: 50%;
-    float: right;
+    float: left;
+    box-shadow: 5px 5px 10px gray;
 }
 
 li a{
     text-decoration: none;
+    font-weight: 700;
 }
+
+
+
+
 
 /* *** MAIN *** */
 
 
 main{
-    
     text-align: center;
+}
+
+main .misure{
+    height: 100vh;
+    position: relative;
 }
 
 main .description{
@@ -54,10 +63,7 @@ main .description{
     transform: translate(-50%, -50%);
 }
 
-main .misure{
-    height: 60vw;
-    position: relative;
-}
+
 
 #shoes-one{
     background-color: red;
